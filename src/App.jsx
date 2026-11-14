@@ -5,6 +5,8 @@ const photos = [
   { src: "/photos/3.jpeg", caption: "The prettiest part of my every day 🌷" },
   { src: "/photos/4.jpeg", caption: "Every little moment with you matters ❤️" },
   { src: "/photos/5.jpeg", caption: "If I had to choose again, I'd still choose you" },
+    { src: "/photos/6.jpeg", caption: "If I had to choose again, I'd still choose you" },
+
 ];
 
 function Fireworks({ active }) {
@@ -127,10 +129,15 @@ export default function App() {
             <p className="hero-text">Tumhari ek smile mera poora din achha bana deti hai. Tum paas ho ya door, meri favourite feeling hamesha tum hi rahogi. Aaj ka din sirf tumhare naam, Gullu. ❤️</p>
             <div className="hero-actions"><button className="button button-pink" onClick={celebrate}>Make a birthday wish</button><a className="text-link" href="#letter">A little letter ↓</a></div>
           </div>
-          <div className="hero-art" aria-label="Decorative glowing heart">
+          <div className="hero-art">
             <div className="orbit orbit-a" /><div className="orbit orbit-b" />
-            <div className="heart-3d">♥</div><span className="floating-star star-a">✦</span><span className="floating-star star-b">✧</span><span className="floating-star star-c">✦</span>
-            <div className="art-caption">YOU ARE MY<br /><b>FAVOURITE</b> PERSON</div>
+            <figure className="hero-photo-card">
+              <div className="hero-photo-frame">
+                <img src="/photos/1.jpeg" alt="Gullu" />
+              </div>
+              <figcaption>A little piece of my heart ♡</figcaption>
+            </figure>
+            <span className="floating-star star-a">✦</span><span className="floating-star star-b">✧</span><span className="floating-star star-c">✦</span>
           </div>
           <div className="scroll-note">SCROLL TO EXPLORE <span>↓</span></div>
         </section>
